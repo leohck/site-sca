@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Codificação -->
+	<meta charset="utf-8">
+	<base href="/">
+	<!--Icone do site-->
+	<link rel="shortcurt icon" href="img/favicon.ico">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<!--Framework Materialize-->
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- titulo da página -->
+	<title>SCA Systema - Soluções para Gestão de Finanças</title>
+</head>
+<body>
+	<!-- menu do site -->
+	<nav class="row">
+	    <div class="nav-wrapper white">	    	
+		    <img  href="#"  src="img/logo.png" class="img-responsive brand-logo left">
+		    <a href="#" data-activates="mobile-demo" class="button-collapse right blue-text darken-2"><i class="material-icons">menu</i></a>
+		    <ul id="nav-mobile" class="right hide-on-med-and-down">
+			    <li><a href="index.html" class="blue-text darken-2">Home</a></li>
+			    <li><a href="clientes.html" class="blue-text darken-2">Clientes</a></li>
+			    <li><a href="comunidade.html" class="blue-text darken-2">Comunidade</a></li>
+			    <li><a href="atuacao.html" class="blue-text darken-2">Atuação</a></li>
+			    <li><a href="solucao.html" class="blue-text darken-2">Soluções</a></li>
+			    <li class="active"><a href="contato.html" class="blue-text darken-2">Contato</a></li>
+		    </ul>
+		    <!-- Menu mobile -->
+		    <ul class="side-nav" id="mobile-demo">
+		    	<li><a href="index.html" class="blue-text darken-2">Home</a></li>
+			    <li><a href="clientes.html" class="blue-text darken-2">Clientes</a></li>
+			    <li><a href="comunidade.html" class="blue-text darken-2">Comunidade</a></li>
+			    <li><a href="atuacao.html" class="blue-text darken-2">Atuação</a></li>
+			    <li><a href="solucao.html" class="blue-text darken-2">Soluções</a></li>
+			    <li class="active"><a href="contato.html" class="blue-text darken-2">Contato</a></li>
+		    </ul>
+		</div>
+	</nav>
+	    <!-- DIV DO ASSISTENTE -->
+    <ul id="slide-out" class="side-nav">
+      <div id="contentParent" class="responsive-columns-wrapper">
+        <div id="chat-column-holder" class="responsive-column content-column">
+          <div class="chat-column">
+            <div id="scrollingChat"></div>
+            <label for="textInput" class="inputOutline">
+              <input id="textInput" class="input responsive-column"
+              placeholder="Type something" type="text"
+              onkeydown="ConversationPanel.inputKeyDown(event, this)">
+            </label>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse" id="botao"><i class="small material-icons">live_help</i></a>
+
+    	<!-- Informacoes de contato -->	
+	<div class="container">
+		<div class="row">
+		<h3 class=" center borda">Contato</h3>	
+			<ul class="collection">
+			    <li class="collection-item avatar">
+			      <i class="material-icons circle blue darken-2">phone</i>
+			      <span class="title"><b>Telefone</b></span>
+			      <p>
+			         +55 (11) 3078-1755
+			      </p>
+			      <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+			    </li>
+			    <li class="collection-item avatar">
+			      <i class="material-icons circle blue darken-2">people</i>
+			      <span class="title"><b>Trabalhe conosco</b></span>
+			      <p>
+			         Envie seu currículo para: novasca@scasystema.com.br
+			      </p>
+			      <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+			    </li>
+			    <li class="collection-item avatar">
+			      <i class="material-icons circle blue darken-2">location_on</i>
+			      <span class="title"><b>Endereço</b></span>
+			      <p>
+			         R. Joaquim Floriano, 733 - Itaim Bibi, São Paulo - SP, 04534-012
+			      </p>
+			      <!-- <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a> -->
+			    </li>			    
+			</ul>
+		</div>
+
+		<div class="row">
+		 <h3 class=" center borda">Fale com a SCA</h3>		 
+	      <div class="col s12 m12">
+	      	<div class="row">
+			    <form class="col s12">
+			      <div class="row">
+			        <div class="input-field col s6">
+			          <i class="material-icons prefix">account_circle</i>
+			          <input id="icon-name" type="text" class="validate" name="nome">
+			          <label for="icon-name">Nome</label>
+			        </div>
+			        <div class="input-field col s6">
+			          <i class="material-icons prefix">phone</i>
+			          <input id="icon_telephone" type="tel" class="validate" name="telefone">
+			          <label for="icon_telephone">Telephone</label>
+			        </div>
+			      </div>			      			     
+			      <div class="row">
+			        <div class="input-field col s6">
+			          <i class="material-icons prefix">mail</i>
+			          <input id="icon-email" type="email" class="validate" autocomplete="off" name="email">
+			          <label for="icon-email">Email</label>
+			        </div>
+			        <div class="input-field col s6">
+			          <i class="material-icons prefix">more</i>
+			          <input id="icon-assunto" type="text" class="validate" autocomplete="off" name="assunto">
+			          <label for="icon-assunto">Assunto</label>
+			        </div>
+			      </div>
+			      <div class="row">				    
+			        <div class="input-field col s12">
+			        <i class="material-icons prefix">mode_edit</i>
+			          <textarea id="icon-msg" class="materialize-textarea" name="msg"></textarea>
+			          <label for="icon-msg">Mensagem</label>
+			        </div>				     
+				  </div>
+				  <div class="row">				    
+			        <button class="btn waves-effect waves-light right blue darken-2" type="submit" name="action">Enviar
+					    <i class="material-icons right">send</i>
+					</button>			     
+				  </div>			      			      
+			    </form>
+			</div>
+	      </div>
+	    </div>		
+	</div>
+
+	<!-- Footer do site -->
+	<footer class="page-footer blue darken-2">
+	    <div class="container">
+		    <div class="row">
+			    <div class="col l4 s12">
+				    <h5 class="white-text">SCA Systema</h5>
+				    					
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Atuação</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Soluções</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Contato</a></li>
+					</ul>
+					
+			    </div> 
+			    <div class="col l4 s12">
+				    <h5 class="white-text">Eventos</h5>
+				    						
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Comunidade</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Calendário</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Galeria de Fotos</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Faça parte!</a></li>
+					</ul>
+					
+			    </div> 
+			    <div class="col l4 s12">				    
+				    					
+					<ul>
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+						<li><a class="grey-text text-lighten-3 right" href="http://ibefsp.com.br/" target="_blank"><img src="img/ibef.png"></a></li>						
+					</ul>
+					
+			    </div> 
+			    
+		    </div>
+	    </div>
+	    <div class="footer-copyright">
+		    <div class="container">
+		    &copy; Copyright 1985-2017 SCA Systema Consultores Associados.	    
+		    </div>
+	    </div>
+    </footer>
+
+  <!-- IMPORT ASSISTENTE SCRIPTS -->
+  <script src="js/common.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/conversation.js"></script>
+  <script src="js/global.js"></script>
+	<!--Framework Materialize-->
+	<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>   
+     <!-- Javascript do nav mobile -->
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$(".button-collapse").sideNav();
+    	})
+    </script>    
+</body>
+</html>
